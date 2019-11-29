@@ -32,7 +32,7 @@ html-targets := $(foreach l,$(lectures),html/$(l).html)
 docx-targets := $(foreach l,$(lectures),binaries/$(l).docx)
 
 
-.PHONY: aux-yaml all-html all-tex all-word book rename-book-parts compress-book split-book-to-handouts just-deploy deploy clean-html
+.PHONY: aux-yaml all-html all-tex all-word book compress-book split-book-to-handouts just-deploy deploy clean-html
 
 
 
@@ -54,9 +54,11 @@ latex-book/lnotes_book.pdf: all-tex
 book: all-tex latex-book/lnotes_book.pdf all-html 
 
 rename-book-parts:
+	# should not be needed anymore
 	scripts/rename.sh
 
 compress-book:
+	  # I don't use this anymore - use Acrobat Pro since it has better compression
 	  $(GHOSTSCRIPT)  \
 	  -sDEVICE=pdfwrite \
 	  -dPDFSETTINGS=/ebook \
@@ -87,5 +89,5 @@ split-book-to-handouts: latex-book/lnotes_book.pdf
 just-deploy:
 	scripts/deploy.sh
 
-deploy: book all-word split-book-to-handouts rename-book-parts
+deploy: book all-word split-book-to-handouts 
 	scripts/deploy.sh
