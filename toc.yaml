@@ -1,0 +1,705 @@
+'0': {filename: lec_01_introduction.html, href: '', title: Introduction}
+'0.1': {filename: lec_01_introduction.html, href: integer-multiplication-an-example-of-an-algorithm,
+  title: 'Integer multiplication: an example of an algorithm'}
+'0.2': {filename: lec_01_introduction.html, href: karatsubasec, title: 'Extended Example:
+    A faster way to multiply (optional)'}
+'0.3': {filename: lec_01_introduction.html, href: algsbeyondarithmetic, title: Algorithms
+    beyond arithmetic}
+'0.4': {filename: lec_01_introduction.html, href: on-the-importance-of-negative-results.,
+  title: On the importance of negative results.}
+'0.5': {filename: lec_01_introduction.html, href: roadmapsec, title: Roadmap to the
+    rest of this book}
+0.5.1: {filename: lec_01_introduction.html, href: dependencies-between-chapters, title: Dependencies
+    between chapters}
+'0.6': {filename: lec_01_introduction.html, href: exercises, title: Exercises}
+'0.7': {filename: lec_01_introduction.html, href: bnotesintrosec, title: Bibliographical
+    notes}
+'1': {filename: lec_00_1_math_background.html, href: '', title: Mathematical Background}
+'1.1': {filename: lec_00_1_math_background.html, href: manualbackground, title: "This\
+    \ chapter: a reader\u2019s manual"}
+'1.2': {filename: lec_00_1_math_background.html, href: secmathoverview, title: A quick
+    overview of mathematical prerequisites}
+'1.3': {filename: lec_00_1_math_background.html, href: reading-mathematical-texts,
+  title: Reading mathematical texts}
+1.3.1: {filename: lec_00_1_math_background.html, href: definitions, title: Definitions}
+1.3.2: {filename: lec_00_1_math_background.html, href: assertions-theorems-lemmas-claims,
+  title: 'Assertions: Theorems, lemmas, claims'}
+1.3.3: {filename: lec_00_1_math_background.html, href: proofs, title: Proofs}
+'1.4': {filename: lec_00_1_math_background.html, href: basic-discrete-math-objects,
+  title: Basic discrete math objects}
+1.4.1: {filename: lec_00_1_math_background.html, href: sets, title: Sets}
+1.4.2: {filename: lec_00_1_math_background.html, href: specialsets, title: Special
+    sets}
+1.4.3: {filename: lec_00_1_math_background.html, href: functionsec, title: Functions}
+1.4.4: {filename: lec_00_1_math_background.html, href: graphsec, title: Graphs}
+1.4.5: {filename: lec_00_1_math_background.html, href: secquantifiers, title: Logic
+    operators and quantifiers}
+1.4.6: {filename: lec_00_1_math_background.html, href: secquantifierssums, title: Quantifiers
+    for summations and products}
+1.4.7: {filename: lec_00_1_math_background.html, href: boundvarsec, title: 'Parsing
+    formulas: bound and free variables'}
+1.4.8: {filename: lec_00_1_math_background.html, href: secbigohnotation, title: Asymptotics
+    and Big-O notation}
+1.4.9: {filename: lec_00_1_math_background.html, href: some-rules-of-thumb-for-big-o-notation,
+  title: Some rules of thumb for Big-O notation}
+'1.5': {filename: lec_00_1_math_background.html, href: proofsbackgroundsec, title: Proofs}
+1.5.1: {filename: lec_00_1_math_background.html, href: proofs-and-programs, title: Proofs
+    and programs}
+1.5.2: {filename: lec_00_1_math_background.html, href: proof-writing-style, title: Proof
+    writing style}
+1.5.3: {filename: lec_00_1_math_background.html, href: patterns-in-proofs, title: Patterns
+    in proofs}
+'1.6': {filename: lec_00_1_math_background.html, href: topsortsec, title: 'Extended
+    example: Topological Sorting'}
+1.6.1: {filename: lec_00_1_math_background.html, href: inductionsec, title: Mathematical
+    induction}
+1.6.2: {filename: lec_00_1_math_background.html, href: proving-the-result-by-induction,
+  title: Proving the result by induction}
+1.6.3: {filename: lec_00_1_math_background.html, href: minimality-and-uniqueness,
+  title: Minimality and uniqueness}
+'1.7': {filename: lec_00_1_math_background.html, href: notationsec, title: 'This book:
+    notation and conventions'}
+1.7.1: {filename: lec_00_1_math_background.html, href: conventionsec, title: Variable
+    name conventions}
+1.7.2: {filename: lec_00_1_math_background.html, href: some-idioms, title: Some idioms}
+'1.8': {filename: lec_00_1_math_background.html, href: exercises, title: Exercises}
+'1.9': {filename: lec_00_1_math_background.html, href: notesmathchap, title: Bibliographical
+    notes}
+'10': {filename: lec_09_godel.html, href: '', title: 'Is every theorem provable?'}
+'10.1': {filename: lec_09_godel.html, href: godelproofdef, title: "Hilbert\u2019s\
+    \ Program and G\xF6del\u2019s Incompleteness Theorem"}
+10.1.1: {filename: lec_09_godel.html, href: godelproofsystemssec, title: Defining
+    Proof Systems}
+'10.2': {filename: lec_09_godel.html, href: "g\xF6dels-incompleteness-theorem-computational-variant",
+  title: "G\xF6del\u2019s Incompleteness Theorem: Computational variant"}
+'10.3': {filename: lec_09_godel.html, href: quantified-integer-statements, title: Quantified
+    integer statements}
+'10.4': {filename: lec_09_godel.html, href: diophantine-equations-and-the-mrdp-theorem,
+  title: Diophantine equations and the MRDP Theorem}
+'10.5': {filename: lec_09_godel.html, href: hardness-of-quantified-integer-statements,
+  title: Hardness of quantified integer statements}
+10.5.1: {filename: lec_09_godel.html, href: step-1-quantified-mixed-statements-and-computation-histories,
+  title: 'Step 1: Quantified mixed statements and computation histories'}
+10.5.2: {filename: lec_09_godel.html, href: step-2-reducing-mixed-statements-to-integer-statements,
+  title: 'Step 2: Reducing mixed statements to integer statements'}
+'10.6': {filename: lec_09_godel.html, href: exercises, title: Exercises}
+'10.7': {filename: lec_09_godel.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'11': {filename: lec_10_efficient_alg.html, href: '', title: Efficient computation}
+'11.1': {filename: lec_10_efficient_alg.html, href: problems-on-graphs, title: Problems
+    on graphs}
+11.1.1: {filename: lec_10_efficient_alg.html, href: finding-the-shortest-path-in-a-graph,
+  title: Finding the shortest path in a graph}
+11.1.2: {filename: lec_10_efficient_alg.html, href: finding-the-longest-path-in-a-graph,
+  title: Finding the longest path in a graph}
+11.1.3: {filename: lec_10_efficient_alg.html, href: mincutsec, title: Finding the
+    minimum cut in a graph}
+11.1.4: {filename: lec_10_efficient_alg.html, href: linerprogsec, title: Min-Cut Max-Flow
+    and Linear programming}
+11.1.5: {filename: lec_10_efficient_alg.html, href: finding-the-maximum-cut-in-a-graph,
+  title: Finding the maximum cut in a graph}
+11.1.6: {filename: lec_10_efficient_alg.html, href: a-note-on-convexity, title: A
+    note on convexity}
+'11.2': {filename: lec_10_efficient_alg.html, href: beyond-graphs, title: Beyond graphs}
+11.2.1: {filename: lec_10_efficient_alg.html, href: sat, title: SAT}
+11.2.2: {filename: lec_10_efficient_alg.html, href: solving-linear-equations, title: Solving
+    linear equations}
+11.2.3: {filename: lec_10_efficient_alg.html, href: solving-quadratic-equations, title: Solving
+    quadratic equations}
+'11.3': {filename: lec_10_efficient_alg.html, href: more-advanced-examples, title: More
+    advanced examples}
+11.3.1: {filename: lec_10_efficient_alg.html, href: determinant-of-a-matrix, title: Determinant
+    of a matrix}
+11.3.2: {filename: lec_10_efficient_alg.html, href: permanent-of-a-matrix, title: Permanent
+    of a matrix}
+11.3.3: {filename: lec_10_efficient_alg.html, href: finding-a-zero-sum-equilibrium,
+  title: Finding a zero-sum equilibrium}
+11.3.4: {filename: lec_10_efficient_alg.html, href: finding-a-nash-equilibrium, title: Finding
+    a Nash equilibrium}
+11.3.5: {filename: lec_10_efficient_alg.html, href: primality-testing, title: Primality
+    testing}
+11.3.6: {filename: lec_10_efficient_alg.html, href: integer-factoring, title: Integer
+    factoring}
+'11.4': {filename: lec_10_efficient_alg.html, href: our-current-knowledge, title: Our
+    current knowledge}
+'11.5': {filename: lec_10_efficient_alg.html, href: exercises, title: Exercises}
+'11.6': {filename: lec_10_efficient_alg.html, href: effalgnotes, title: Bibliographical
+    notes}
+'11.7': {filename: lec_10_efficient_alg.html, href: further-explorations, title: Further
+    explorations}
+'12': {filename: lec_11_running_time.html, href: '', title: Modeling running time}
+'12.1': {filename: lec_11_running_time.html, href: formally-defining-running-time,
+  title: Formally defining running time}
+12.1.1: {filename: lec_11_running_time.html, href: polynomial-and-exponential-time,
+  title: Polynomial and Exponential Time}
+'12.2': {filename: lec_11_running_time.html, href: modeling-running-time-using-ram-machines-nand-ram,
+  title: Modeling running time using RAM Machines / NAND-RAM}
+'12.3': {filename: lec_11_running_time.html, href: ECTTsec, title: Extended Church-Turing
+    Thesis (discussion)}
+'12.4': {filename: lec_11_running_time.html, href: efficient-universal-machine-a-nand-ram-interpreter-in-nand-ram,
+  title: 'Efficient universal machine: a NAND-RAM interpreter in NAND-RAM'}
+12.4.1: {filename: lec_11_running_time.html, href: timed-universal-turing-machine,
+  title: Timed Universal Turing Machine}
+'12.5': {filename: lec_11_running_time.html, href: the-time-hierarchy-theorem, title: The
+    time hierarchy theorem}
+'12.6': {filename: lec_11_running_time.html, href: nonuniformcompsec, title: Non uniform
+    computation}
+12.6.1: {filename: lec_11_running_time.html, href: obliviousnandtm, title: Oblivious
+    NAND-TM programs}
+12.6.2: {filename: lec_11_running_time.html, href: unrollloopsec, title: 'Unrolling
+    the loop: algorithmic transformation of Turing Machines to circuits'}
+12.6.3: {filename: lec_11_running_time.html, href: can-uniform-algorithms-simulate-non-uniform-ones,
+  title: 'Can uniform algorithms simulate non uniform ones?'}
+12.6.4: {filename: lec_11_running_time.html, href: uniform-vs.-nonuniform-computation-a-recap,
+  title: "Uniform vs.\_Nonuniform computation: A recap"}
+'12.7': {filename: lec_11_running_time.html, href: exercises, title: Exercises}
+'12.8': {filename: lec_11_running_time.html, href: bibnotesrunningtime, title: Bibliographical
+    notes}
+'13': {filename: lec_12_NP.html, href: '', title: Polynomial-time reductions}
+'13.1': {filename: lec_12_NP.html, href: formaldefdecisionexamplessec, title: Formal
+    definitions of problems}
+'13.2': {filename: lec_12_NP.html, href: polytimeredsec, title: Polynomial-time reductions}
+'13.3': {filename: lec_12_NP.html, href: reducing-3sat-to-zero-one-equations, title: Reducing
+    3SAT to zero one equations}
+13.3.1: {filename: lec_12_NP.html, href: quadratic-equations, title: Quadratic equations}
+'13.4': {filename: lec_12_NP.html, href: the-independent-set-problem, title: The independent
+    set problem}
+'13.5': {filename: lec_12_NP.html, href: reducing-independent-set-to-maximum-cut,
+  title: Reducing Independent Set to Maximum Cut}
+'13.6': {filename: lec_12_NP.html, href: reducing-3sat-to-longest-path, title: Reducing
+    3SAT to Longest Path}
+13.6.1: {filename: lec_12_NP.html, href: summary-of-relations, title: Summary of relations}
+'13.7': {filename: lec_12_NP.html, href: exercises, title: Exercises}
+'13.8': {filename: lec_12_NP.html, href: reductionsbibnotes, title: Bibliographical
+    notes}
+'14': {filename: lec_13_Cook_Levin.html, href: '', title: 'NP, NP completeness, and
+    the Cook-Levin Theorem'}
+'14.1': {filename: lec_13_Cook_Levin.html, href: the-class-mathbfnp, title: 'The class
+    \mathbf{NP}'}
+14.1.1: {filename: lec_13_Cook_Levin.html, href: examples-of-functions-in-mathbfnp,
+  title: 'Examples of functions in \mathbf{NP}'}
+14.1.2: {filename: lec_13_Cook_Levin.html, href: basic-facts-about-mathbfnp, title: 'Basic
+    facts about \mathbf{NP}'}
+'14.2': {filename: lec_13_Cook_Levin.html, href: from-mathbfnp-to-3sat-the-cook-levin-theorem,
+  title: 'From \mathbf{NP} to 3SAT: The Cook-Levin Theorem'}
+14.2.1: {filename: lec_13_Cook_Levin.html, href: what-does-this-mean, title: 'What
+    does this mean?'}
+14.2.2: {filename: lec_13_Cook_Levin.html, href: the-cook-levin-theorem-proof-outline,
+  title: 'The Cook-Levin Theorem: Proof outline'}
+'14.3': {filename: lec_13_Cook_Levin.html, href: the-nandsat-problem-and-why-it-is-mathbfnp-hard.,
+  title: 'The \ensuremath{\mathit{NANDSAT}} Problem, and why it is \mathbf{NP} hard.'}
+'14.4': {filename: lec_13_Cook_Levin.html, href: the-3nand-problem, title: 'The 3\ensuremath{\mathit{NAND}}
+    problem'}
+'14.5': {filename: lec_13_Cook_Levin.html, href: from-3nand-to-3sat, title: 'From
+    3\ensuremath{\mathit{NAND}} to 3\ensuremath{\mathit{SAT}}'}
+'14.6': {filename: lec_13_Cook_Levin.html, href: wrapping-up, title: Wrapping up}
+'14.7': {filename: lec_13_Cook_Levin.html, href: exercises, title: Exercises}
+'14.8': {filename: lec_13_Cook_Levin.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'15': {filename: lec_14_PvsNP.html, href: '', title: 'What if P equals NP?'}
+'15.1': {filename: lec_14_PvsNP.html, href: search-to-decision-reduction, title: Search-to-decision
+    reduction}
+'15.10': {filename: lec_14_PvsNP.html, href: exercises, title: Exercises}
+'15.11': {filename: lec_14_PvsNP.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'15.2': {filename: lec_14_PvsNP.html, href: optimizationsection, title: Optimization}
+15.2.1: {filename: lec_14_PvsNP.html, href: example-supervised-learning, title: 'Example:
+    Supervised learning'}
+15.2.2: {filename: lec_14_PvsNP.html, href: example-breaking-cryptosystems, title: 'Example:
+    Breaking cryptosystems'}
+'15.3': {filename: lec_14_PvsNP.html, href: finding-mathematical-proofs, title: Finding
+    mathematical proofs}
+'15.4': {filename: lec_14_PvsNP.html, href: quantifier-elimination-advanced, title: Quantifier
+    elimination (advanced)}
+15.4.1: {filename: lec_14_PvsNP.html, href: selfimprovingsat, title: 'Application:
+    self improving algorithm for 3\ensuremath{\mathit{SAT}}'}
+'15.5': {filename: lec_14_PvsNP.html, href: approximating-counting-problems-and-posterior-sampling-advanced-optional,
+  title: 'Approximating counting problems and posterior sampling (advanced, optional)'}
+'15.6': {filename: lec_14_PvsNP.html, href: what-does-all-of-this-imply, title: 'What
+    does all of this imply?'}
+'15.7': {filename: lec_14_PvsNP.html, href: can-mathbfp-neq-mathbfnp-be-neither-true-nor-false,
+  title: 'Can \mathbf{P} \neq \mathbf{NP} be neither true nor false?'}
+'15.8': {filename: lec_14_PvsNP.html, href: is-mathbfpmathbfnp-in-practice, title: 'Is
+    \mathbf{P}=\mathbf{NP} in practice?'}
+'15.9': {filename: lec_14_PvsNP.html, href: what-if-mathbfp-neq-mathbfnp, title: 'What
+    if \mathbf{P} \neq \mathbf{NP}?'}
+'16': {filename: lec_14a_space_complexity.html, href: '', title: Space bounded computation}
+'16.1': {filename: lec_14a_space_complexity.html, href: lecture-summary, title: Lecture
+    summary}
+'16.2': {filename: lec_14a_space_complexity.html, href: exercises, title: Exercises}
+'16.3': {filename: lec_14a_space_complexity.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'16.4': {filename: lec_14a_space_complexity.html, href: further-explorations, title: Further
+    explorations}
+'16.5': {filename: lec_14a_space_complexity.html, href: acknowledgements, title: Acknowledgements}
+'17': {filename: lec_15_probability.html, href: '', title: Probability Theory 101}
+'17.1': {filename: lec_15_probability.html, href: random-coins, title: Random coins}
+17.1.1: {filename: lec_15_probability.html, href: random-variables, title: Random
+    variables}
+17.1.2: {filename: lec_15_probability.html, href: distributions-over-strings, title: Distributions
+    over strings}
+17.1.3: {filename: lec_15_probability.html, href: more-general-sample-spaces., title: More
+    general sample spaces.}
+'17.2': {filename: lec_15_probability.html, href: correlations-and-independence, title: Correlations
+    and independence}
+17.2.1: {filename: lec_15_probability.html, href: independent-random-variables, title: Independent
+    random variables}
+17.2.2: {filename: lec_15_probability.html, href: collections-of-independent-random-variables.,
+  title: Collections of independent random variables.}
+'17.3': {filename: lec_15_probability.html, href: concentration-and-tail-bounds, title: Concentration
+    and tail bounds}
+17.3.1: {filename: lec_15_probability.html, href: chebyshevs-inequality, title: "Chebyshev\u2019\
+    s Inequality"}
+17.3.2: {filename: lec_15_probability.html, href: the-chernoff-bound, title: The Chernoff
+    bound}
+'17.4': {filename: lec_15_probability.html, href: exercises, title: Exercises}
+'17.5': {filename: lec_15_probability.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'18': {filename: lec_16_randomized_alg.html, href: '', title: Probabilistic computation}
+'18.1': {filename: lec_16_randomized_alg.html, href: finding-approximately-good-maximum-cuts.,
+  title: Finding approximately good maximum cuts.}
+18.1.1: {filename: lec_16_randomized_alg.html, href: amplifying-the-success-of-randomized-algorithms,
+  title: Amplifying the success of randomized algorithms}
+18.1.2: {filename: lec_16_randomized_alg.html, href: success-amplification, title: Success
+    amplification}
+18.1.3: {filename: lec_16_randomized_alg.html, href: two-sided-amplification, title: Two-sided
+    amplification}
+18.1.4: {filename: lec_16_randomized_alg.html, href: what-does-this-mean, title: 'What
+    does this mean?'}
+18.1.5: {filename: lec_16_randomized_alg.html, href: solving-sat-through-randomization,
+  title: Solving SAT through randomization}
+18.1.6: {filename: lec_16_randomized_alg.html, href: bipartite-matching., title: Bipartite
+    matching.}
+'18.2': {filename: lec_16_randomized_alg.html, href: exercises, title: Exercises}
+'18.3': {filename: lec_16_randomized_alg.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'18.4': {filename: lec_16_randomized_alg.html, href: acknowledgements, title: Acknowledgements}
+'19': {filename: lec_17_model_rand.html, href: '', title: Modeling randomized computation}
+'19.1': {filename: lec_17_model_rand.html, href: modeling-randomized-computation,
+  title: Modeling randomized computation}
+19.1.1: {filename: lec_17_model_rand.html, href: an-alternative-view-random-coins-as-an-extra-input,
+  title: 'An alternative view: random coins as an extra input'}
+19.1.2: {filename: lec_17_model_rand.html, href: successamptwosided, title: Success
+    amplification of two-sided error algorithms}
+'19.2': {filename: lec_17_model_rand.html, href: mathbfbpp-and-mathbfnp-completeness,
+  title: '\mathbf{BPP} and \mathbf{NP} completeness'}
+'19.3': {filename: lec_17_model_rand.html, href: the-power-of-randomization, title: The
+    power of randomization}
+19.3.1: {filename: lec_17_model_rand.html, href: solving-mathbfbpp-in-exponential-time,
+  title: 'Solving \mathbf{BPP} in exponential time'}
+19.3.2: {filename: lec_17_model_rand.html, href: simulating-randomized-algorithms-by-circuits,
+  title: Simulating randomized algorithms by circuits}
+'19.4': {filename: lec_17_model_rand.html, href: derandomization, title: Derandomization}
+19.4.1: {filename: lec_17_model_rand.html, href: pseudorandom-generators, title: Pseudorandom
+    generators}
+19.4.2: {filename: lec_17_model_rand.html, href: optimalprgconj, title: From existence
+    to constructivity}
+19.4.3: {filename: lec_17_model_rand.html, href: usefulness-of-pseudorandom-generators,
+  title: Usefulness of pseudorandom generators}
+'19.5': {filename: lec_17_model_rand.html, href: mathbfpmathbfnp-and-mathbfbpp-vs-mathbfp,
+  title: '\mathbf{P}=\mathbf{NP} and \mathbf{BPP} vs \mathbf{P}'}
+'19.6': {filename: lec_17_model_rand.html, href: non-constructive-existence-of-pseudorandom-generators-advanced-optional,
+  title: 'Non-constructive existence of pseudorandom generators (advanced, optional)'}
+'19.7': {filename: lec_17_model_rand.html, href: exercises, title: Exercises}
+'19.8': {filename: lec_17_model_rand.html, href: modelrandbibnotes, title: Bibliographical
+    notes}
+'2': {filename: lec_02_representation.html, href: '', title: Computation and Representation}
+'2.1': {filename: lec_02_representation.html, href: defining-representations, title: Defining
+    representations}
+2.1.1: {filename: lec_02_representation.html, href: representing-natural-numbers,
+  title: Representing natural numbers}
+2.1.2: {filename: lec_02_representation.html, href: meaning-of-representations-discussion,
+  title: Meaning of representations (discussion)}
+'2.2': {filename: lec_02_representation.html, href: representations-beyond-natural-numbers,
+  title: Representations beyond natural numbers}
+2.2.1: {filename: lec_02_representation.html, href: repnegativeintegerssec, title: Representing
+    (potentially negative) integers}
+2.2.2: {filename: lec_02_representation.html, href: twoscomplement, title: "Two\u2019\
+    s complement representation (optional)"}
+2.2.3: {filename: lec_02_representation.html, href: rational-numbers-and-representing-pairs-of-strings,
+  title: 'Rational numbers, and representing pairs of strings'}
+'2.3': {filename: lec_02_representation.html, href: representing-real-numbers, title: Representing
+    real numbers}
+2.3.1: {filename: lec_02_representation.html, href: cantorsec, title: 'Can we represent
+    reals exactly?'}
+'2.4': {filename: lec_02_representation.html, href: representing-objects-beyond-numbers,
+  title: Representing objects beyond numbers}
+2.4.1: {filename: lec_02_representation.html, href: finite-representations, title: Finite
+    representations}
+2.4.2: {filename: lec_02_representation.html, href: prefixfreesec, title: Prefix-free
+    encoding}
+2.4.3: {filename: lec_02_representation.html, href: making-representations-prefix-free,
+  title: Making representations prefix-free}
+2.4.4: {filename: lec_02_representation.html, href: proof-by-python-optional, title: Proof
+    by Python (optional)}
+2.4.5: {filename: lec_02_representation.html, href: representing-letters-and-text,
+  title: Representing letters and text}
+2.4.6: {filename: lec_02_representation.html, href: representing-vectors-matrices-images,
+  title: 'Representing vectors, matrices, images'}
+2.4.7: {filename: lec_02_representation.html, href: representing-graphs, title: Representing
+    graphs}
+2.4.8: {filename: lec_02_representation.html, href: representing-lists-and-nested-lists,
+  title: Representing lists and nested lists}
+2.4.9: {filename: lec_02_representation.html, href: notation, title: Notation}
+'2.5': {filename: lec_02_representation.html, href: defining-computational-tasks-as-mathematical-functions,
+  title: Defining computational tasks as mathematical functions}
+2.5.1: {filename: lec_02_representation.html, href: secimplvsspec, title: Distinguish
+    functions from programs!}
+'2.6': {filename: lec_02_representation.html, href: exercises, title: Exercises}
+'2.7': {filename: lec_02_representation.html, href: bibnotesrepres, title: Bibliographical
+    notes}
+'20': {filename: lec_19_cryptography.html, href: '', title: Cryptography}
+'20.1': {filename: lec_19_cryptography.html, href: classical-cryptosystems, title: Classical
+    cryptosystems}
+'20.10': {filename: lec_19_cryptography.html, href: magic, title: Magic}
+20.10.1: {filename: lec_19_cryptography.html, href: zero-knowledge-proofs, title: Zero
+    knowledge proofs}
+20.10.2: {filename: lec_19_cryptography.html, href: fully-homomorphic-encryption,
+  title: Fully homomorphic encryption}
+20.10.3: {filename: lec_19_cryptography.html, href: multiparty-secure-computation,
+  title: Multiparty secure computation}
+'20.11': {filename: lec_19_cryptography.html, href: exercises, title: Exercises}
+'20.12': {filename: lec_19_cryptography.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'20.2': {filename: lec_19_cryptography.html, href: defining-encryption, title: Defining
+    encryption}
+'20.3': {filename: lec_19_cryptography.html, href: defining-security-of-encryption,
+  title: Defining security of encryption}
+'20.4': {filename: lec_19_cryptography.html, href: perfect-secrecy, title: Perfect
+    secrecy}
+20.4.1: {filename: lec_19_cryptography.html, href: example-perfect-secrecy-in-the-battlefield,
+  title: 'Example: Perfect secrecy in the battlefield'}
+20.4.2: {filename: lec_19_cryptography.html, href: constructing-perfectly-secret-encryption,
+  title: Constructing perfectly secret encryption}
+'20.5': {filename: lec_19_cryptography.html, href: necessity-of-long-keys, title: Necessity
+    of long keys}
+'20.6': {filename: lec_19_cryptography.html, href: computational-secrecy, title: Computational
+    secrecy}
+20.6.1: {filename: lec_19_cryptography.html, href: stream-ciphers-or-the-derandomized-one-time-pad,
+  title: Stream ciphers or the derandomized one-time pad}
+'20.7': {filename: lec_19_cryptography.html, href: computational-secrecy-and-mathbfnp,
+  title: 'Computational secrecy and \mathbf{NP}'}
+'20.8': {filename: lec_19_cryptography.html, href: public-key-cryptography, title: Public
+    key cryptography}
+20.8.1: {filename: lec_19_cryptography.html, href: defining-public-key-encryption,
+  title: Defining public key encryption}
+20.8.2: {filename: lec_19_cryptography.html, href: diffie-hellman-key-exchange, title: Diffie-Hellman
+    key exchange}
+'20.9': {filename: lec_19_cryptography.html, href: other-security-notions, title: Other
+    security notions}
+'21': {filename: lec_24_proofs.html, href: '', title: Proofs and algorithms}
+'21.1': {filename: lec_24_proofs.html, href: lecture-summary, title: Lecture summary}
+'21.2': {filename: lec_24_proofs.html, href: exercises, title: Exercises}
+'21.3': {filename: lec_24_proofs.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'21.4': {filename: lec_24_proofs.html, href: further-explorations, title: Further
+    explorations}
+'21.5': {filename: lec_24_proofs.html, href: acknowledgements, title: Acknowledgements}
+'22': {filename: lec_26_quantum_computing.html, href: '', title: Quantum computing}
+'22.1': {filename: lec_26_quantum_computing.html, href: the-double-slit-experiment,
+  title: The double slit experiment}
+'22.10': {filename: lec_26_quantum_computing.html, href: shors-algorithm-hearing-the-shape-of-prime-factors,
+  title: "Shor\u2019s Algorithm: Hearing the shape of prime factors"}
+22.10.1: {filename: lec_26_quantum_computing.html, href: period-finding, title: Period
+    finding}
+22.10.2: {filename: lec_26_quantum_computing.html, href: shors-algorithm-a-birds-eye-view,
+  title: "Shor\u2019s Algorithm: A bird\u2019s eye view"}
+'22.11': {filename: lec_26_quantum_computing.html, href: quantum-fourier-transform-advanced-optional,
+  title: 'Quantum Fourier Transform (advanced, optional)'}
+22.11.1: {filename: lec_26_quantum_computing.html, href: quantum-fourier-transform-over-the-boolean-cube-simons-algorithm,
+  title: "Quantum Fourier Transform over the Boolean Cube: Simon\u2019s Algorithm"}
+22.11.2: {filename: lec_26_quantum_computing.html, href: from-fourier-to-period-finding-simons-algorithm-advanced-optional,
+  title: "From Fourier to Period finding: Simon\u2019s Algorithm (advanced, optional)"}
+22.11.3: {filename: lec_26_quantum_computing.html, href: from-simon-to-shor-advanced-optional,
+  title: 'From Simon to Shor (advanced, optional)'}
+'22.12': {filename: lec_26_quantum_computing.html, href: exercises, title: Exercises}
+'22.13': {filename: lec_26_quantum_computing.html, href: quantumbibnotessec, title: Bibliographical
+    notes}
+'22.2': {filename: lec_26_quantum_computing.html, href: quantum-amplitudes, title: Quantum
+    amplitudes}
+22.2.1: {filename: lec_26_quantum_computing.html, href: linear-algebra-quick-review,
+  title: Linear algebra quick review}
+'22.3': {filename: lec_26_quantum_computing.html, href: bellineqsec, title: "Bell\u2019\
+    s Inequality"}
+'22.4': {filename: lec_26_quantum_computing.html, href: quantum-weirdness, title: Quantum
+    weirdness}
+'22.5': {filename: lec_26_quantum_computing.html, href: quantum-computing-and-computation---an-executive-summary.,
+  title: Quantum computing and computation - an executive summary.}
+'22.6': {filename: lec_26_quantum_computing.html, href: quantum-systems, title: Quantum
+    systems}
+22.6.1: {filename: lec_26_quantum_computing.html, href: quantum-amplitudes-1, title: Quantum
+    amplitudes}
+22.6.2: {filename: lec_26_quantum_computing.html, href: quantum-systems-an-executive-summary,
+  title: 'Quantum systems: an executive summary'}
+'22.7': {filename: lec_26_quantum_computing.html, href: analysis-of-bells-inequality-optional,
+  title: "Analysis of Bell\u2019s Inequality (optional)"}
+'22.8': {filename: lec_26_quantum_computing.html, href: quantum-computation, title: Quantum
+    computation}
+22.8.1: {filename: lec_26_quantum_computing.html, href: quantum-circuits, title: Quantum
+    circuits}
+22.8.2: {filename: lec_26_quantum_computing.html, href: qnand-circ-programs-optional,
+  title: QNAND-CIRC programs (optional)}
+22.8.3: {filename: lec_26_quantum_computing.html, href: uniform-computation, title: Uniform
+    computation}
+'22.9': {filename: lec_26_quantum_computing.html, href: physically-realizing-quantum-computation,
+  title: Physically realizing quantum computation}
+'3': {filename: lec_03_computation.html, href: '', title: Defining computation}
+'3.1': {filename: lec_03_computation.html, href: defining-computation, title: Defining
+    computation}
+'3.2': {filename: lec_03_computation.html, href: computing-using-and-or-and-not.,
+  title: 'Computing using AND, OR, and NOT.'}
+3.2.1: {filename: lec_03_computation.html, href: some-properties-of-and-and-or, title: Some
+    properties of AND and OR}
+3.2.2: {filename: lec_03_computation.html, href: xoraonexample, title: 'Extended example:
+    Computing \ensuremath{\mathit{XOR}} from \ensuremath{\mathit{AND}}, \ensuremath{\mathit{OR}},
+    and \ensuremath{\mathit{NOT}}'}
+3.2.3: {filename: lec_03_computation.html, href: informally-defining-basic-operations-and-algorithms,
+  title: Informally defining basic operations and algorithms}
+'3.3': {filename: lec_03_computation.html, href: booleancircuitfig, title: Boolean
+    Circuits}
+3.3.1: {filename: lec_03_computation.html, href: boolean-circuits-a-formal-definition,
+  title: 'Boolean circuits: a formal definition'}
+3.3.2: {filename: lec_03_computation.html, href: equivalence-of-circuits-and-straight-line-programs,
+  title: Equivalence of circuits and straight-line programs}
+'3.4': {filename: lec_03_computation.html, href: physicalimplementationsec, title: Physical
+    implementations of computing devices (digression)}
+3.4.1: {filename: lec_03_computation.html, href: transistors, title: Transistors}
+3.4.2: {filename: lec_03_computation.html, href: logical-gates-from-transistors, title: Logical
+    gates from transistors}
+3.4.3: {filename: lec_03_computation.html, href: biological-computing, title: Biological
+    computing}
+3.4.4: {filename: lec_03_computation.html, href: cellular-automata-and-the-game-of-life,
+  title: Cellular automata and the game of life}
+3.4.5: {filename: lec_03_computation.html, href: neural-networks, title: Neural networks}
+3.4.6: {filename: lec_03_computation.html, href: a-computer-made-from-marbles-and-pipes,
+  title: A computer made from marbles and pipes}
+'3.5': {filename: lec_03_computation.html, href: nandsec, title: The NAND function}
+3.5.1: {filename: lec_03_computation.html, href: nand-circuits, title: NAND Circuits}
+3.5.2: {filename: lec_03_computation.html, href: more-examples-of-nand-circuits-optional,
+  title: More examples of NAND circuits (optional)}
+3.5.3: {filename: lec_03_computation.html, href: nandcircsec, title: The NAND-CIRC
+    Programming language}
+'3.6': {filename: lec_03_computation.html, href: equivalence-of-all-these-models,
+  title: Equivalence of all these models}
+3.6.1: {filename: lec_03_computation.html, href: othergatessec, title: Circuits with
+    other gate sets}
+3.6.2: {filename: lec_03_computation.html, href: specvsimplrem, title: "Specification\
+    \ vs.\_implementation (again)"}
+'3.7': {filename: lec_03_computation.html, href: exercises, title: Exercises}
+'3.8': {filename: lec_03_computation.html, href: biographical-notes, title: Biographical
+    notes}
+'4': {filename: lec_03a_computing_every_function.html, href: '', title: 'Syntactic
+    sugar, and computing every function'}
+'4.1': {filename: lec_03a_computing_every_function.html, href: secsyntacticsugar,
+  title: Some examples of syntactic sugar}
+4.1.1: {filename: lec_03a_computing_every_function.html, href: user-defined-procedures,
+  title: User-defined procedures}
+4.1.2: {filename: lec_03a_computing_every_function.html, href: functionsynsugarthmpython,
+  title: Proof by Python (optional)}
+4.1.3: {filename: lec_03a_computing_every_function.html, href: ifstatementsec, title: Conditional
+    statements}
+'4.2': {filename: lec_03a_computing_every_function.html, href: addexample, title: 'Extended
+    example: Addition and Multiplication (optional)'}
+'4.3': {filename: lec_03a_computing_every_function.html, href: seclookupfunc, title: The
+    LOOKUP function}
+4.3.1: {filename: lec_03a_computing_every_function.html, href: constructing-a-nand-circ-program-for-lookup,
+  title: 'Constructing a NAND-CIRC program for \ensuremath{\mathit{LOOKUP}}'}
+'4.4': {filename: lec_03a_computing_every_function.html, href: seccomputeallfunctions,
+  title: Computing every function}
+4.4.1: {filename: lec_03a_computing_every_function.html, href: proof-of-nands-universality,
+  title: "Proof of NAND\u2019s Universality"}
+4.4.2: {filename: lec_03a_computing_every_function.html, href: tight-upper-bound,
+  title: Improving by a factor of n (optional)}
+'4.5': {filename: lec_03a_computing_every_function.html, href: seccomputalternative,
+  title: 'Computing every function: An alternative proof'}
+'4.6': {filename: lec_03a_computing_every_function.html, href: secdefinesizeclasses,
+  title: 'The class \ensuremath{\mathit{SIZE}}(T)'}
+'4.7': {filename: lec_03a_computing_every_function.html, href: exercises, title: Exercises}
+'4.8': {filename: lec_03a_computing_every_function.html, href: computeeveryfunctionbibnotes,
+  title: Bibliographical notes}
+'5': {filename: lec_04_code_and_data.html, href: '', title: 'Code as data, data as
+    code'}
+'5.1': {filename: lec_04_code_and_data.html, href: representprogramsec, title: Representing
+    programs as strings}
+'5.2': {filename: lec_04_code_and_data.html, href: countingcircuitsec, title: 'Counting
+    programs, and lower bounds on the size of NAND-CIRC programs'}
+5.2.1: {filename: lec_04_code_and_data.html, href: size-hierarchy-theorem-optional,
+  title: Size hierarchy theorem (optional)}
+'5.3': {filename: lec_04_code_and_data.html, href: listoftuplesrepsec, title: The
+    tuples representation}
+5.3.1: {filename: lec_04_code_and_data.html, href: stringrepresentationrpgoramsec,
+  title: From tuples to strings}
+'5.4': {filename: lec_04_code_and_data.html, href: a-nand-circ-interpreter-in-nand-circ,
+  title: A NAND-CIRC interpreter in NAND-CIRC}
+5.4.1: {filename: lec_04_code_and_data.html, href: efficient-universal-programs, title: Efficient
+    universal programs}
+5.4.2: {filename: lec_04_code_and_data.html, href: a-nand-circ-interpeter-in-pseudocode,
+  title: A NAND-CIRC interpeter in pseudocode}
+5.4.3: {filename: lec_04_code_and_data.html, href: nandevalpythonsec, title: A NAND
+    interpreter in Python}
+5.4.4: {filename: lec_04_code_and_data.html, href: constructing-the-nand-circ-interpreter-in-nand-circ,
+  title: Constructing the NAND-CIRC interpreter in NAND-CIRC}
+'5.5': {filename: lec_04_code_and_data.html, href: a-python-interpreter-in-nand-circ-discussion,
+  title: A Python interpreter in NAND-CIRC (discussion)}
+'5.6': {filename: lec_04_code_and_data.html, href: PECTTsec, title: The physical extended
+    Church-Turing thesis (discussion)}
+5.6.1: {filename: lec_04_code_and_data.html, href: attempts-at-refuting-the-pectt,
+  title: Attempts at refuting the PECTT}
+'5.7': {filename: lec_04_code_and_data.html, href: recap-of-part-i-finite-computation,
+  title: 'Recap of Part I: Finite Computation'}
+'5.8': {filename: lec_04_code_and_data.html, href: exercises, title: Exercises}
+'5.9': {filename: lec_04_code_and_data.html, href: bibnotescodeasdata, title: Bibliographical
+    notes}
+'6': {filename: lec_06_loops.html, href: '', title: Loops and infinity}
+'6.1': {filename: lec_06_loops.html, href: turing-machines, title: Turing Machines}
+6.1.1: {filename: lec_06_loops.html, href: turingmachinepalindrome, title: 'Extended
+    example: A Turing machine for palindromes'}
+6.1.2: {filename: lec_06_loops.html, href: turing-machines-a-formal-definition, title: 'Turing
+    machines: a formal definition'}
+6.1.3: {filename: lec_06_loops.html, href: computable-functions, title: Computable
+    functions}
+6.1.4: {filename: lec_06_loops.html, href: infinite-loops-and-partial-functions, title: Infinite
+    loops and partial functions}
+'6.2': {filename: lec_06_loops.html, href: turing-machines-as-programming-languages,
+  title: Turing machines as programming languages}
+6.2.1: {filename: lec_06_loops.html, href: the-nand-tm-programming-language, title: The
+    NAND-TM Programming language}
+6.2.2: {filename: lec_06_loops.html, href: sneak-peak-nand-tm-vs-turing-machines,
+  title: 'Sneak peak: NAND-TM vs Turing machines'}
+6.2.3: {filename: lec_06_loops.html, href: examples, title: Examples}
+'6.3': {filename: lec_06_loops.html, href: equivalence-of-turing-machines-and-nand-tm-programs,
+  title: Equivalence of Turing machines and NAND-TM programs}
+6.3.1: {filename: lec_06_loops.html, href: specification-vs-implementation-again,
+  title: Specification vs implementation (again)}
+'6.4': {filename: lec_06_loops.html, href: nand-tm-syntactic-sugar, title: NAND-TM
+    syntactic sugar}
+6.4.1: {filename: lec_06_loops.html, href: nandtminnerloopssec, title: GOTO and inner
+    loops}
+'6.5': {filename: lec_06_loops.html, href: uniformity-and-nand-vs-nand-tm-discussion,
+  title: 'Uniformity, and NAND vs NAND-TM (discussion)'}
+'6.6': {filename: lec_06_loops.html, href: exercises, title: Exercises}
+'6.7': {filename: lec_06_loops.html, href: chaploopnotes, title: Bibliographical notes}
+'7': {filename: lec_07_other_models.html, href: '', title: Equivalent models of computation}
+'7.1': {filename: lec_07_other_models.html, href: ram-machines-and-nand-ram, title: RAM
+    machines and NAND-RAM}
+'7.10': {filename: lec_07_other_models.html, href: othermodelsbibnotes, title: Bibliographical
+    notes}
+'7.2': {filename: lec_07_other_models.html, href: nandtmgorydetailssec, title: The
+    gory details (optional)}
+7.2.1: {filename: lec_07_other_models.html, href: indexed-access-in-nand-tm, title: Indexed
+    access in NAND-TM}
+7.2.2: {filename: lec_07_other_models.html, href: two-dimensional-arrays-in-nand-tm,
+  title: Two dimensional arrays in NAND-TM}
+7.2.3: {filename: lec_07_other_models.html, href: all-the-rest, title: All the rest}
+'7.3': {filename: lec_07_other_models.html, href: turing-equivalence-discussion, title: Turing
+    equivalence (discussion)}
+7.3.1: {filename: lec_07_other_models.html, href: the-best-of-both-worlds-paradigm,
+  title: The Best of both worlds paradigm}
+7.3.2: {filename: lec_07_other_models.html, href: lets-talk-about-abstractions., title: "Let\u2019\
+    s talk about abstractions."}
+7.3.3: {filename: lec_07_other_models.html, href: turingcompletesec, title: 'Turing
+    completeness and equivalence, a formal definition (optional)'}
+'7.4': {filename: lec_07_other_models.html, href: cellularautomatasec, title: Cellular
+    automata}
+7.4.1: {filename: lec_07_other_models.html, href: one-dimensional-cellular-automata-are-turing-complete,
+  title: One dimensional cellular automata are Turing complete}
+7.4.2: {filename: lec_07_other_models.html, href: turingmachinesconfigsec, title: Configurations
+    of Turing machines and the next-step function}
+'7.5': {filename: lec_07_other_models.html, href: lambdacalculussec, title: Lambda
+    calculus and functional programming languages}
+7.5.1: {filename: lec_07_other_models.html, href: applying-functions-to-functions,
+  title: Applying functions to functions}
+7.5.2: {filename: lec_07_other_models.html, href: curryingsec, title: Obtaining multi-argument
+    functions via Currying}
+7.5.3: {filename: lec_07_other_models.html, href: "formal-description-of-the-\u03BB\
+    -calculus.", title: "Formal description of the \u03BB calculus."}
+7.5.4: {filename: lec_07_other_models.html, href: infiniteloopslambda, title: "Infinite\
+    \ loops in the \u03BB calculus"}
+'7.6': {filename: lec_07_other_models.html, href: "the-enhanced-\u03BB-calculus",
+  title: "The Enhanced \u03BB calculus"}
+7.6.1: {filename: lec_07_other_models.html, href: "computing-a-function-in-the-enhanced-\u03BB\
+    -calculus", title: "Computing a function in the enhanced \u03BB calculus"}
+7.6.2: {filename: lec_07_other_models.html, href: "enhanced-\u03BB-calculus-is-turing-complete",
+  title: "Enhanced \u03BB calculus is Turing-complete"}
+'7.7': {filename: lec_07_other_models.html, href: lambdacacluluspuresec, title: "From\
+    \ enhanced to pure \u03BB calculus"}
+7.7.1: {filename: lec_07_other_models.html, href: list-processing, title: List processing}
+7.7.2: {filename: lec_07_other_models.html, href: ycombinatorsec, title: 'The Y combinator,
+    or recursion without recursion'}
+'7.8': {filename: lec_07_other_models.html, href: churchturingdiscussionsec, title: The
+    Church-Turing Thesis (discussion)}
+7.8.1: {filename: lec_07_other_models.html, href: different-models-of-computation,
+  title: Different models of computation}
+'7.9': {filename: lec_07_other_models.html, href: exercises, title: Exercises}
+'8': {filename: lec_08_uncomputability.html, href: '', title: Universality and uncomputability}
+'8.1': {filename: lec_08_uncomputability.html, href: universality-or-a-meta-circular-evaluator,
+  title: Universality or a meta-circular evaluator}
+8.1.1: {filename: lec_08_uncomputability.html, href: representtmsec, title: Proving
+    the existence of a universal Turing Machine}
+8.1.2: {filename: lec_08_uncomputability.html, href: implications-of-universality-discussion,
+  title: Implications of universality (discussion)}
+'8.2': {filename: lec_08_uncomputability.html, href: is-every-function-computable,
+  title: 'Is every function computable?'}
+'8.3': {filename: lec_08_uncomputability.html, href: haltingsec, title: The Halting
+    problem}
+8.3.1: {filename: lec_08_uncomputability.html, href: is-the-halting-problem-really-hard-discussion,
+  title: 'Is the Halting problem really hard? (discussion)'}
+8.3.2: {filename: lec_08_uncomputability.html, href: haltalternativesec, title: 'A
+    direct proof of the uncomputability of \ensuremath{\mathit{HALT}} (optional)'}
+'8.4': {filename: lec_08_uncomputability.html, href: reductionsuncompsec, title: Reductions}
+8.4.1: {filename: lec_08_uncomputability.html, href: example-halting-on-the-zero-problem,
+  title: 'Example: Halting on the zero problem'}
+'8.5': {filename: lec_08_uncomputability.html, href: rices-theorem-and-the-impossibility-of-general-software-verification,
+  title: "Rice\u2019s Theorem and the impossibility of general software verification"}
+8.5.1: {filename: lec_08_uncomputability.html, href: ricethmsec, title: "Rice\u2019\
+    s Theorem"}
+8.5.2: {filename: lec_08_uncomputability.html, href: halting-and-rices-theorem-for-other-turing-complete-models,
+  title: "Halting and Rice\u2019s Theorem for other Turing-complete models"}
+8.5.3: {filename: lec_08_uncomputability.html, href: is-software-verification-doomed-discussion,
+  title: 'Is software verification doomed? (discussion)'}
+'8.6': {filename: lec_08_uncomputability.html, href: exercises, title: Exercises}
+'8.7': {filename: lec_08_uncomputability.html, href: uncomputablebibnotes, title: Bibliographical
+    notes}
+'9': {filename: lec_08a_restricted_models.html, href: '', title: Restricted computational
+    models}
+'9.1': {filename: lec_08a_restricted_models.html, href: turing-completeness-as-a-bug,
+  title: Turing completeness as a bug}
+'9.10': {filename: lec_08a_restricted_models.html, href: bibliographical-notes, title: Bibliographical
+    notes}
+'9.2': {filename: lec_08a_restricted_models.html, href: regular-expressions, title: Regular
+    expressions}
+'9.3': {filename: lec_08a_restricted_models.html, href: deterministic-finite-automata-and-efficient-matching-of-regular-expressions-optional,
+  title: 'Deterministic finite automata, and efficient matching of regular expressions
+    (optional)'}
+9.3.1: {filename: lec_08a_restricted_models.html, href: matching-regular-expressions-using-constant-memory,
+  title: Matching regular expressions using constant memory}
+9.3.2: {filename: lec_08a_restricted_models.html, href: secdfa, title: Deterministic
+    Finite Automata}
+9.3.3: {filename: lec_08a_restricted_models.html, href: regular-functions-are-closed-under-complement,
+  title: Regular functions are closed under complement}
+'9.4': {filename: lec_08a_restricted_models.html, href: limitations-of-regular-expressions,
+  title: Limitations of regular expressions}
+'9.5': {filename: lec_08a_restricted_models.html, href: other-semantic-properties-of-regular-expressions,
+  title: Other semantic properties of regular expressions}
+'9.6': {filename: lec_08a_restricted_models.html, href: seccfg, title: Context free
+    grammars}
+9.6.1: {filename: lec_08a_restricted_models.html, href: context-free-grammars-as-a-computational-model,
+  title: Context-free grammars as a computational model}
+9.6.2: {filename: lec_08a_restricted_models.html, href: the-power-of-context-free-grammars,
+  title: The power of context free grammars}
+9.6.3: {filename: lec_08a_restricted_models.html, href: limitations-of-context-free-grammars-optional,
+  title: Limitations of context-free grammars (optional)}
+'9.7': {filename: lec_08a_restricted_models.html, href: semantic-properties-of-context-free-languages,
+  title: Semantic properties of context free languages}
+9.7.1: {filename: lec_08a_restricted_models.html, href: uncomputability-of-context-free-grammar-equivalence-optional,
+  title: Uncomputability of context-free grammar equivalence (optional)}
+'9.8': {filename: lec_08a_restricted_models.html, href: summary-of-semantic-properties-for-regular-expressions-and-context-free-grammars,
+  title: Summary of semantic properties for regular expressions and context-free grammars}
+'9.9': {filename: lec_08a_restricted_models.html, href: exercises, title: Exercises}
+p: {filename: lec_00_0_preface.html, href: '', title: Preface}
+p.1: {filename: lec_00_0_preface.html, href: to-the-student, title: To the student}
+p.1.1: {filename: lec_00_0_preface.html, href: is-the-effort-worth-it, title: 'Is
+    the effort worth it?'}
+p.2: {filename: lec_00_0_preface.html, href: to-potential-instructors, title: To potential
+    instructors}
+p.3: {filename: lec_00_0_preface.html, href: acknowledgements, title: Acknowledgements}

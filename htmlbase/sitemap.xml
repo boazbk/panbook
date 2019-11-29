@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://introtcs.org/public/index.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_00_0_preface.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_01_introduction.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_00_1_math_background.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_02_representation.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_03_computation.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_03a_computing_every_function.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_04_code_and_data.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_06_loops.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_07_other_models.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_08_uncomputability.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_08a_restricted_models.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_09_godel.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_10_efficient_alg.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_11_running_time.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_12_NP.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_13_Cook_Levin.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_14_PvsNP.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_14a_space_complexity.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_15_probability.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_16_randomized_alg.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_17_model_rand.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_19_cryptography.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_24_proofs.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://introtcs.org/public/lec_26_quantum_computing.html</loc>
+  <lastmod>2019-01-30T16:44:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

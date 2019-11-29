@@ -1,0 +1,1 @@
+This directory should contain all images for the figures in this project

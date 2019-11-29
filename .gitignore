@@ -1,0 +1,29 @@
+
+# auxiliary files for latex
+*.aux
+*.fdb_latexmk
+*.log
+*.fls
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.pygtex
+*.pyg
+# *.jar
+
+# vim files
+*.swp
+
+# generated text files
+
+
+# pdf files
+*.pdf
+
+
+# ignore ipython nb checkpoints
+/figure/.ipynb_checkpoints/
+
+
+.DS_Store
