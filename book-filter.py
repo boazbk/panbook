@@ -38,7 +38,13 @@ import csv
 import bibtexparser
 import LaTexAccents as latex_accents
 import uuid
-from matplotlib.cbook import dedent
+try:
+    from inspect import cleandoc as dedent
+except ImportError:
+    # Deprecated as of version 3.1. Not quite the same
+    # as textwrap.dedent.
+    from matplotlib.cbook import dedent
+
 
 
 class MyTable(pf.Table):
@@ -266,7 +272,7 @@ def loadyaml(file, default={}):
     """Utility function to load from yaml file"""
     try:
         with open(file, "r", encoding="utf-8") as f:
-            t = yaml.load(f)
+            t = yaml.load(f, Loader=yaml.FullLoader)
     except FileNotFoundError:
         t = default
     return t
