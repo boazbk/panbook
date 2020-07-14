@@ -369,6 +369,9 @@ innerbottommargin=5pt]{cBox}
 \newenvironment{corollary}{\begin{savenotes}\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}\end{savenotes}}
 
 
+
+
+
 %---------------------------
 % SHADED QUOTE (added by Boaz)
 %----------------------------
@@ -420,6 +423,8 @@ innerbottommargin=5pt]{cBox}
 
 \newtcolorbox{myrecapbox}{colback=my-light-pink,grow to right by=-3mm,grow to left by=-3mm, boxrule=0pt,boxsep=0pt,breakable}
 
+\newtcolorbox{mynonmathbox}{colback=my-light-pink,grow to right by=-3mm,grow to left by=-3mm, boxrule=0pt,boxsep=0pt,breakable}
+
 \newtcolorbox{myobjectivesbox}{colback=my-light-pink,grow to right by=-3mm,grow to left by=-3mm, boxrule=0pt,boxsep=0pt,breakable}
 
 \newtcolorbox{mybigideabox}{colback=bigideacolor,grow to right by=-3mm,grow to left by=-3mm, boxrule=0pt,boxsep=0pt,breakable}
@@ -448,7 +453,7 @@ innerbottommargin=5pt]{cBox}
 
 
 %----------------------------------------------------------------------------------------
-%	REMARK AND PAUSE ENVIRONMENTS
+%	REMARK AND PAUSE AND NONMATH ENVIRONMENTS
 %----------------------------------------------------------------------------------------
 
 \newenvironment{remark}[1][\unskip]{\begin{remarkbox}\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
@@ -488,6 +493,14 @@ innerbottommargin=5pt]{cBox}
 }{\end{list}\vskip5pt \end{pausebox}} % Tighter line spacing and white space after remark
 
 
+
+\newenvironment{nonmath}{\par\vspace{10pt} % Vertical white space above the remark and smaller font size
+    \begin{mynonmathbox}
+    {\bf\sffamily \Large This chapter: A non-mathy overview} 
+
+
+    }{\end{mynonmathbox}} % Tighter line spacing and white space after remark
+    
 
 %-----------------------------------------
 % Learning objectives box

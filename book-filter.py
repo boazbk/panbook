@@ -45,6 +45,7 @@ except ImportError:
     # as textwrap.dedent.
     from matplotlib.cbook import dedent
 
+from pylatexenc.latex2text import LatexNodes2Text
 
 
 class MyTable(pf.Table):
@@ -116,6 +117,7 @@ def prepare(doc):
     doc.label_descriptions = {}  # eventually handle different files, counters
     doc.searchtext = ""
     doc.logfile = open(logfilename, "w", encoding="utf-8")
+    doc.logfile.write("Created at " + time.strftime("%m/%d/%Y %H:%M:%S"))
     doc.logfile.write("LOG: argv:" + str(sys.argv) + "\n")
     doc.logfile.write("Metadata:\n" + str(doc.metadata) + "\n")
     doc.lastlabel = ""
@@ -145,7 +147,7 @@ def prepare(doc):
     doc.latex_headers = {int(k): D[k] for k in D}
     logstring("Latex Headers: " + str(doc.latex_headers), doc)
     doc.label_classes = doc.get_metadata(
-        "latexsectionheaders", {"solvedex": "Solved Exercise", "bigidea": "Big Idea"}
+        "labelclasses", {"solvedex": "Solved Exercise", "solvedexercise": "Solved Exercise", "bigidea": "Big Idea"}
     )
 
     # These do all the work
@@ -170,6 +172,7 @@ def prepare(doc):
         h_html_code_block
     ]
     # h_code_inline for nice highlighting in code
+
 
 
 def finalize(doc):
@@ -714,6 +717,15 @@ def h_paragraph(e, doc):
     return None
 
 
+def math2unicode(str):
+    pattern = r'\$([^\$]+)\$'
+    def temp(matchobj):
+        s = matchobj.group(1)
+        return LatexNodes2Text().latex_to_text("\("+s+"\)")
+
+    return re.sub(pattern,temp,str)
+
+
 def h_math(e, doc):
     r"""Make multiletter identifiers mathit{..}
     For now just handle uppercase identifiers.
@@ -873,7 +885,7 @@ def h_latex_headers(e, doc):
     label = labelref(e, doc)
 
     if label and e.level in doc.latex_headers:
-        doc.label_descriptions[label] = doc.latex_headers[e.level].capitalize
+        doc.label_descriptions[label] = doc.latex_headers[e.level].capitalize()
     if doc.format != "latex":
         return None
     labeltext = f"\\label{{{label}}}" if label else ""
@@ -888,6 +900,7 @@ def h_latex_headers(e, doc):
     )
 
 
+
 def h_latex_div(e, doc):
     r"""make every div with class=foo to begin{foo} ... end{foo}
     if there is title then it is begin{foo}[title] instead
@@ -899,6 +912,10 @@ def h_latex_div(e, doc):
 
     c = e.classes[0]
     title = e.attributes.get("title", "")
+    if title and doc.format != "latex":
+        title = math2unicode(title)
+        e.attributes["title"] = title
+
     label = labelref(e, doc)
     if label in doc.labels:
         name = getlabel(label, doc)[0]
@@ -909,11 +926,11 @@ def h_latex_div(e, doc):
     e.attributes["name"] = name
 
     if e.identifier:
-        doc.label_descriptions[e.identifier] = c.capitalize()
+        doc.label_descriptions[e.identifier] = doc.label_classes.get(c, c.capitalize())
     if doc.format == "html" and c == "quote":
         return pf.BlockQuote(e)
     if doc.format != "latex":
-        return None
+        return e
     dref = e.attributes.get("data-ref", None)
     if not title and c == "proof" and dref and dref != doc.lastlabel:
         title = fr"Proof of \cref{{{dref}}}"
@@ -951,7 +968,7 @@ def expand_commands(tex):
     Expand out latex commands. Currently hardwired into few macros, eventually should
     get it from the configuration file.
     """
-    with_args = {r"\floor": r"\lfloor #1 \rfloor"}
+    with_args = {r"\floor": r"\lfloor #1 \rfloor" , r"\ceil": r"\lceil #1 \rceil" }
     no_args = {r"\N": r"\mathbb{N}", r"\Z": r"\mathbb{Z}"}
     for c, rep in with_args.items():
         c = c.replace("\\", "\\\\")
@@ -986,6 +1003,13 @@ def format_pseudocode(code):
         "ENDIF",
         "END\\\\IF",
         "RETURN",
+        "LIF",
+        "LELSE",
+        "LENDIF",
+        "L\\\\IF",
+        "L\\\\ELSE",
+        "L\\\\ENDIF"
+
     ]
 
     for k in keywords:
@@ -1003,32 +1027,32 @@ def format_pseudocode(code):
     for l in lines:
         if not l:
             continue
-
+        
+        
         for f in functions:
-            i = l.find(f+"(")
-            if i > -1:
-                beg, end = findparen(l, i + 1)
-                if beg > -1:
-                    # calling functions should always happen in math mode
-                    suffix = l[end + 1 :].lstrip() if l[end + 1 :] else "$"
-                    suffix = suffix[1:] if suffix[0] == "$" else " $" + suffix
-                    prefix =  l[:i].rstrip()
-                    if prefix and prefix[-1]=="$":
-                        prefix = prefix[:-1]
-                    else:
-                        prefix += "$ "
-                    l = (
-                        prefix
-                        + "\\CALL{"
-                        + f
-                        + "}{$"
-                        + l[beg + 1 : end]
-                        + "$} "
-                        + suffix
-                    )
-        m = re.search(r"\S+", l)
-        if m:
-            i = m.start()
+            temp = ""
+            found = True
+            while found:
+                found = False
+                i = l.find(f+"(")
+                if i > -1:
+                    beg, end = findparen(l, i + 1)
+                    if beg > -1:
+                        found = True
+                        # calling functions should always happen in math mode
+                        suffix = l[end + 1 :].lstrip() if l[end + 1 :] else "$"
+                        suffix = suffix[1:] if suffix[0] == "$" else " $" + suffix
+                        prefix =  l[:i].rstrip()
+                        if prefix and prefix[-1]=="$":
+                            prefix = prefix[:-1]
+                        else:
+                            prefix += "$ "
+                        temp += prefix + "\\CALL{" + f + "}{$" + l[beg + 1 : end] + "$} " 
+                        l = suffix
+            l = temp + l
+
+        i = len(l) - len(l.lstrip())        
+        if i < len(l):
             if l[i] != "\\":
                 l = l[:i] + "\\STATE " + l[i:]
         l = re.sub(r"`([^`]+)`", lambda m: fr"\texttt{{{latexescape(m.group(1))}}}", l)
@@ -1049,12 +1073,14 @@ def format_pseudocode(code):
 def htmlpseudocode(id,number,title,code):
     """Takes formatted code and makes it into HTML"""
     code = code.replace("<","&lt;").replace(">","&gt;")
+    bm= r'<span class="math inline">\('
+    em= r'\)</span>'
     prefix = dedent(f'''
         <div  class="pseudocodeoutput">
         <div class="ps-root">
         <div class="ps-algorithm with-caption" id = {id}>
         <p class="ps-line" style="text-indent:-1.2em;padding-left:1.2em;">
-        <span class="ps-keyword">Algorithm {number} </span>{title}</p>
+        <span class="ps-keyword">Algorithm {number} </span>{math2unicode(title)}</p>
         <div class="ps-algorithmic">
     ''') # dropped with-linenum
     postfix = dedent('''
@@ -1071,15 +1097,17 @@ def htmlpseudocode(id,number,title,code):
         "REQUIRE" :"Input:",
         "ELSE" : "else",
         "ELSIF" : "elsif", 
-        "RETURN" : "return"
-    }
+        "RETURN" : "return",
+        "LELSE" : "else"
+        }
 
     keywordsbeg = {
         "PROCEDURE" : "Procedure",
         "WHILE" : "while",
         "FOR" : "for",
         "FUNCTION" : "Function",
-        "IF" : "if"
+        "IF" : "if",
+        "LIF" : "if"
     }
 
     keywordsend = {
@@ -1087,7 +1115,8 @@ def htmlpseudocode(id,number,title,code):
         "ENDWHILE" : "endwhile",
         "ENDFOR" : "endfor",
         "ENDFUNCTION" : "endfunc",
-        "ENDIF" : "endif"
+        "ENDIF" : "endif",
+        "LENDIF" : "endif"
     }
     keywords = {}
     keywords.update(keywordsbeg)
@@ -1103,11 +1132,17 @@ def htmlpseudocode(id,number,title,code):
         for k in keywordsend:
             if line.find("\\"+k)>= 0:
                 main += "\n"+r"</div>"
-        line = re.sub(r"\\PROCEDURE\{(\w+)\}\{([^\}]*)\}",r"\\PROCEDURE \(\\mathsf{\1}(\2)\)", line)
+        line = re.sub(r"\\PROCEDURE\{(\w+)\}\{([^\}]*)\}",r"\\PROCEDURE" + bm + r"\\mathsf{\1}"+ em + "(\2)", line)
         for k in keywords:
             line = line.replace(f"\\{k}",f'<span class="ps-keyword">{keywords[k]}</span>')
-        while line.find("$") >= 0:
-            line = re.sub(r"\$([^\$]+)\$",r"\(\1\)",line)
+        temp = ""
+        while len(line) and line.find("$") >= 0:
+            i = line.find("$")
+            j = line[i+1:].find("$")
+            if j<0: break
+            temp += f"{line[:i]}{em}{line[i+1:j]}{bm}"
+            line = line[j+1:]
+        temp += line
         line = re.sub(r"\\CALL\{(\w+)\}\{([^\}]*)\}",r"\\mathsf{\1}(\2)", line)
         line = line.replace("\\STATE","")
         t = line.find("\\COMMENT")

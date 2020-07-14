@@ -47,12 +47,51 @@ The main tools are used are:
 
 This is inspired by clojure and lua scripts written by David Steurer to produce our [Sum of Squares lecture notes](https://sumofsquares.org)
 
+The main code for this package is the in the file  `book-filter.py` which is a [Panflute](http://scorreia.com/software/panflute/) filter for Pandoc.
+
+
 ### Todo's
 
 There are many of them, but mainly to get this to the point that it can be easy to use for any project and not hardwired to my own setup for this particular book.
 
-### Installing
+## Installing
 
-Should add some instructions here. You can see the makefile for what we need. The Python scripts have some dependencies on various packages.  One aspects which might create pain in installation for a relatively minor benefit is that I use a custom color specs for the latex pseudocode package minted (mainly to give a different color to NAND - not so important), and to install it there is some setup python scripts. Should be easy to modify the latex source just not to use it. 
+Should add some instructions here. You can see the makefile for what we need. 
+The Python scripts have some dependencies on various packages.
+One aspects which might create pain in installation for a relatively minor benefit is that I use a custom color specs for the latex pseudocode package minted (mainly to give a different color to NAND - not so important), and to install it there is some setup python scripts. 
+Should be easy to modify the latex source just not to use it. 
+
+Specifically the dependencies are the following:
+
+### Python packages:
+
+* [BibtexParser](https://bibtexparser.readthedocs.io/en/master/)
+
+* [Panflute](http://scorreia.com/software/panflute/) 
+
+* [Pylatexenc](https://pypi.org/project/pylatexenc/)
+
+* [PyPDF2](https://pythonhosted.org/PyPDF2/)
+
+
+### Fonts
+
+* TeX Gyre Pagella
+* TeX Gyre Heros
+* Inconsolata LGC Markup
+* FreeMono
+* Asana Math
+
+
+
+One way to check the dependencies is to do the following: 
+
+* Run `make book`
+
+* Goto `latex-book` directory
+
+* Try to run `xelatex -shell-escape lnotes_book.tex` and see what error messages you get. The `-shell-escape` is needed for the [minted](https://ctan.org/pkg/minted?lang=en) package.
+
+
 
 
