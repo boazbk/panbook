@@ -73,6 +73,12 @@ Specifically the dependencies are the following:
 
 * [PyPDF2](https://pythonhosted.org/PyPDF2/)
 
+You could make a [Conda](https://docs.conda.io) environment to install these packages.
+```
+conda create --name panbook python=3.7
+conda activate panbook
+conda install pandoc==2.9.2.1 panflute bibtexparser pylatexenc pypdf2
+```
 
 ### Fonts
 
@@ -81,17 +87,17 @@ Specifically the dependencies are the following:
 * Inconsolata LGC Markup
 * FreeMono
 * Asana Math
-
+* Font Awesome 4.x
+* Latin Modern Math 
 
 
 One way to check the dependencies is to do the following: 
 
-* Run `make book`
+* Run `make all-tex`
 
 * Goto `latex-book` directory
 
 * Try to run `xelatex -shell-escape lnotes_book.tex` and see what error messages you get. The `-shell-escape` is needed for the [minted](https://ctan.org/pkg/minted?lang=en) package.
 
-
-
+* You may need to run `biber lnotes_book` and rerun the above `xelatex` command, if the output asks you to do so.
 
